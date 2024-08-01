@@ -1,0 +1,155 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menuIcon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  color: rgb(143, 47, 47);
+  margin-left: auto;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+}
+
+.select {
+  margin-left: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  margin-right: 5px;
+  width: 120px;
+  font-size: 15px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table th {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.table th:hover {
+  background-color: #f0f0f0;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .select {
+    margin: 5px 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .select {
+    margin: 5px 0;
+    width: 100%;
+  }
+  .title {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 50px;
+  }
+  .menuIcon {
+    font-size: 20px;
+    position: absolute;
+    right: 20px; 
+    top: 20px; 
+  }
+  .title {
+    font-size: 18px;
+  }
+  .table th, .table td {
+    padding: 12px;
+  }
+  .avatar {
+    width: 35px;
+    height: 35px;
+  }
+}
